@@ -3,7 +3,7 @@ import CategoryClient from "./components/client";
 import { CategoryColumn } from "./components/columns";
 import { format } from 'date-fns'
 
-export default async function CategoriesPage(params: { storeId: string }) {
+export default async function CategoriesPage({ params }: { params: { storeId: string } }) {
 	const categories = await prisma.category.findMany({
 		where: {
 			storeId: params.storeId

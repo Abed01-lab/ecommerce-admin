@@ -4,7 +4,7 @@ import { OrderColumn } from "./components/columns";
 import { format } from 'date-fns'
 import { formatter } from "@/lib/utils";
 
-export default async function OrdersPage(params: { storeId: string }) {
+export default async function OrdersPage({ params }: { params: { storeId: string } }) {
 	const orders = await prisma.order.findMany({
 		where: {
 			storeId: params.storeId
