@@ -9,7 +9,7 @@ interface SettingPageProps {
 	}
 }
 
-export default async function SettingPage({ params }: SettingPageProps) {
+export default async function SettingsPage({ params }: SettingPageProps) {
 	const { userId } = auth()
 
 	if (!userId) {

@@ -3,7 +3,7 @@ import ColorClient from "./components/client";
 import { ColorColumn } from "./components/columns";
 import { format } from 'date-fns'
 
-export default async function ColorPage(params: { storeId: string }) {
+export default async function ColorsPage(params: { storeId: string }) {
 	const colors = await prisma.color.findMany({
 		where: {
 			storeId: params.storeId

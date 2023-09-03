@@ -3,7 +3,7 @@ import SizeClient from "./components/client";
 import { SizeColumn } from "./components/columns";
 import { format } from 'date-fns'
 
-export default async function SizePage(params: { storeId: string }) {
+export default async function SizesPage(params: { storeId: string }) {
 	const sizes = await prisma.size.findMany({
 		where: {
 			storeId: params.storeId

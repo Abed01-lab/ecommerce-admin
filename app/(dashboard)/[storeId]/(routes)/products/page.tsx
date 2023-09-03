@@ -4,7 +4,7 @@ import { ProductColumn } from "./components/columns";
 import { format } from 'date-fns'
 import { formatter } from "@/lib/utils";
 
-export default async function ProductPage(params: { storeId: string }) {
+export default async function ProductsPage(params: { storeId: string }) {
 	const products = await prisma.product.findMany({
 		where: {
 			storeId: params.storeId
