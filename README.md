@@ -28,6 +28,6 @@ This is a project I have built to showcase my NextJs/React skill, in creating a 
 
 **UI/UX**
 
--   React-hot-toast ()
+-   React-hot-toast (Alerts)
 -   Shadcn
 -   Tailwindcss
